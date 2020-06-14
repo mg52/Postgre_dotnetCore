@@ -1,0 +1,16 @@
+
+AppFramework\.ReportTarget\.API/tests/ReportTarget\.API\.UnitTests/bin/
+
+AppFramework\.ReportTarget\.API/tests/ReportTarget\.API\.UnitTests/obj/
+
+\.vs/
+
+AppFramework\.ReportTarget\.API/ReportTarget\.API/ReportTarget\.API/bin/
+
+AppFramework\.ReportTarget\.API/ReportTarget\.API/ReportTarget\.API/obj/
+
+*.coverage
+
+AppFramework\.ReportTarget\.API/ReportTarget\.API/ReportTarget\.API/Properties/PublishProfiles/FolderProfile\.pubxml
+
+AppFramework\.ReportTarget\.API/ReportTarget\.API/ReportTarget\.API/Properties/PublishProfiles/FolderProfile\.pubxml\.user
