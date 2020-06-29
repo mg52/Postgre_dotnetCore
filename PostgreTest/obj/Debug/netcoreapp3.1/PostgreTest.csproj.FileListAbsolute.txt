@@ -2,7 +2,6 @@ C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\a
 C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\PostgreTest.exe
-C:\Users\02484829\source\repos\PostgreTest\PostgreTest\obj\Debug\netcoreapp3.1\PostgreTest.csprojAssemblyReference.cache
 C:\Users\02484829\source\repos\PostgreTest\PostgreTest\obj\Debug\netcoreapp3.1\staticwebassets\PostgreTest.StaticWebAssets.Manifest.cache
 C:\Users\02484829\source\repos\PostgreTest\PostgreTest\obj\Debug\netcoreapp3.1\staticwebassets\PostgreTest.StaticWebAssets.xml
 C:\Users\02484829\source\repos\PostgreTest\PostgreTest\obj\Debug\netcoreapp3.1\PostgreTest.AssemblyInfoInputs.cache
@@ -38,3 +37,18 @@ C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\N
 C:\Users\02484829\source\repos\PostgreTest\PostgreTest\obj\Debug\netcoreapp3.1\PostgreTest.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\02484829\source\repos\PostgreTest\PostgreTest\obj\Debug\netcoreapp3.1\PostgreTest.dll
 C:\Users\02484829\source\repos\PostgreTest\PostgreTest\obj\Debug\netcoreapp3.1\PostgreTest.pdb
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\web.config
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\appsettings.Development.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\appsettings.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\PostgreTest.deps.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\PostgreTest.runtimeconfig.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\Publish\Publish\web.config
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\Publish\web.config
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\Publish\appsettings.Development.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\Publish\appsettings.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\Publish\PostgreTest.deps.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\Publish\PostgreTest.runtimeconfig.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\Publish\Publish\appsettings.Development.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\Publish\Publish\appsettings.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\Publish\Publish\PostgreTest.deps.json
+C:\Users\02484829\source\repos\PostgreTest\PostgreTest\bin\Debug\netcoreapp3.1\Publish\Publish\Publish\PostgreTest.runtimeconfig.json

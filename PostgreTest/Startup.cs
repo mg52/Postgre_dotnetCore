@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using PostgreTest.Middleware;
 using PostgreTest.Models;
 
 namespace PostgreTest
@@ -46,6 +47,8 @@ namespace PostgreTest
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.MigrateDatabase<MyWebApiContext>();
 
             app.UseEndpoints(endpoints =>
             {
