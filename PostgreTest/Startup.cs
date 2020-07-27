@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +15,11 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using PostgreTest.Middleware;
 using PostgreTest.Models;
+using PostgreTest.Repositories.Abstract;
+using PostgreTest.Repositories.Concrete;
+using PostgreTest.Services.Abstract;
+using PostgreTest.Services.Concrete;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace PostgreTest
 {
@@ -28,6 +35,20 @@ namespace PostgreTest
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            #region Swagger Configuration 
+            var description = Configuration["ApiDescription"];
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc(Configuration["ApiVersion"], new Microsoft.OpenApi.Models.OpenApiInfo { Title = Configuration["ApiName"], Version = Configuration["ApiVersion"], Description = description });
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+                c.DescribeAllEnumsAsStrings();
+            });
+            #endregion
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IUserRepository, UserRepository>();
+
             services.AddControllers();
             services.AddMvc();
             services.AddEntityFrameworkNpgsql().AddDbContext<MyWebApiContext>(opt =>
@@ -41,6 +62,15 @@ namespace PostgreTest
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger(c =>
+            {
+                c.RouteTemplate = "{documentName}/docs.json";
+            }).UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint(Configuration["ApiVersion"] + "/docs.json", Configuration["ApiName"] + " v" + Configuration["ApiVersion"]);
+                c.RoutePrefix = "";
+            });
 
             app.UseHttpsRedirection();
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\02484829\\source\\repos\\PostgreTest\\PostgreTest\\PostgreTest.csproj": {}
+    "C:\\Users\\02484829\\source\\repos\\Postgre_dotnetCore\\PostgreTest\\PostgreTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\02484829\\source\\repos\\PostgreTest\\PostgreTest\\PostgreTest.csproj": {
+    "C:\\Users\\02484829\\source\\repos\\Postgre_dotnetCore\\PostgreTest\\PostgreTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\02484829\\source\\repos\\PostgreTest\\PostgreTest\\PostgreTest.csproj",
+        "projectUniqueName": "C:\\Users\\02484829\\source\\repos\\Postgre_dotnetCore\\PostgreTest\\PostgreTest.csproj",
         "projectName": "PostgreTest",
-        "projectPath": "C:\\Users\\02484829\\source\\repos\\PostgreTest\\PostgreTest\\PostgreTest.csproj",
+        "projectPath": "C:\\Users\\02484829\\source\\repos\\Postgre_dotnetCore\\PostgreTest\\PostgreTest.csproj",
         "packagesPath": "C:\\Users\\02484829\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\02484829\\source\\repos\\PostgreTest\\PostgreTest\\obj\\",
+        "outputPath": "C:\\Users\\02484829\\source\\repos\\Postgre_dotnetCore\\PostgreTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -44,6 +44,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[5.3.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.4, )"
@@ -60,9 +64,29 @@
               "target": "Package",
               "version": "[3.1.4, )"
             },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[3.1.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUi": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [
