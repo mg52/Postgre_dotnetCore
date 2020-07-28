@@ -98,3 +98,4 @@ C:\Users\02484829\source\repos\Postgre_dotnetCore\PostgreTest\obj\Debug\netcorea
 C:\Users\02484829\source\repos\Postgre_dotnetCore\PostgreTest\obj\Debug\netcoreapp3.1\PostgreTest.csproj.CopyComplete
 C:\Users\02484829\source\repos\Postgre_dotnetCore\PostgreTest\obj\Debug\netcoreapp3.1\PostgreTest.dll
 C:\Users\02484829\source\repos\Postgre_dotnetCore\PostgreTest\obj\Debug\netcoreapp3.1\PostgreTest.pdb
+C:\Users\02484829\source\repos\Postgre_dotnetCore\PostgreTest\obj\Debug\netcoreapp3.1\PostgreTest.csprojAssemblyReference.cache

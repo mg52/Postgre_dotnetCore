@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -63,6 +65,8 @@ namespace PostgreTest
                 app.UseDeveloperExceptionPage();
             }
 
+            
+
             app.UseSwagger(c =>
             {
                 c.RouteTemplate = "{documentName}/docs.json";
@@ -79,6 +83,22 @@ namespace PostgreTest
             app.UseAuthorization();
 
             app.MigrateDatabase<MyWebApiContext>();
+
+            app.Use(async (context, next) =>
+            {
+                await context.Response.WriteAsync("Hello mw delegate.");
+                var cultureQuery = context.Request.Query["culture"];
+                if (!string.IsNullOrWhiteSpace(cultureQuery))
+                {
+                    var culture = new CultureInfo(cultureQuery);
+
+                    CultureInfo.CurrentCulture = culture;
+                    CultureInfo.CurrentUICulture = culture;
+                }
+
+                // Call the next delegate/middleware in the pipeline
+                await next();
+            });
 
             app.UseEndpoints(endpoints =>
             {
